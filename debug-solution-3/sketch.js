@@ -54,12 +54,12 @@ function draw() {
     laps++;
   }
   
-  var lapInverse = map(laps, 0, 100, width/2, 0);
-  fill = color(255,255,255);
+  lapInverse = map(laps, 0, 100, width/2, 0);
   stroke(0);
+  fill(255,255,255);
   ellipse(width/2, height/2, lapInverse, lapInverse);
   noStroke(1);
-  fill = color(r,g,b);
+  fill(r,g,b);
   ellipse(x, y, circleSize, circleSize);
   x = x + (xDirection * speed);
   y = y + (yDirection * speed);
